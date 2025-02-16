@@ -7,7 +7,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     .navbar {
         padding: 15px;
     }
@@ -21,7 +21,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -57,7 +57,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .head-content h1 {
         font-size: 1.8rem;
     }
@@ -82,7 +82,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
     .head-content h1 {
         font-size: 1.5rem;
     }
@@ -196,7 +196,7 @@ nav ul li a:hover {
 }
 
 .head-content-1 {
-    max-width: 900px;
+    min-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -258,7 +258,7 @@ nav ul li a:hover {
 .section-img img {
     width: 100%;
     margin: 25px 0;
-    max-width: 600px;
+    min-width: 600px;
     height: auto;
     border-radius: 15px;
     object-fit: cover;
@@ -286,7 +286,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     unicode-bidi: isolate;
-    max-width: 900px;
+    min-width: 900px;
     margin: 0 auto;
 }
 
@@ -468,7 +468,7 @@ nav ul li a:hover {
 .services-grid {
     margin: 25px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmin(250px, 1fr));
     gap: 20px;
 }
 
@@ -547,7 +547,7 @@ nav ul li a:hover {
 
 /* Enhanced Testimonials Section */
 .testimonials {
-    max-width: 800px;
+    min-width: 800px;
     width: 90%;
     margin: 80px auto;
     padding: 40px;
@@ -689,7 +689,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     unicode-bidi: isolate;
-    max-width: 200px;
+    min-width: 200px;
     margin: 0 auto;
     border: 2px solid #00ffcc;
 }
@@ -727,7 +727,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     unicode-bidi: isolate;
-    max-width: 100%;
+    min-width: 100%;
     margin: 0 auto;
     /* border: 2px solid #00ffcc; */
 }
@@ -1386,7 +1386,7 @@ nav ul li a:hover {
 
 .contact-section {
     padding: 50px 20px;
-    max-width: 600px;
+    min-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
@@ -1463,7 +1463,7 @@ textarea:focus {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     .contact-form {
         padding: 15px;
     }
@@ -1485,7 +1485,7 @@ textarea:focus {
     flex-wrap: wrap;
     gap: 40px;
     justify-content: space-between;
-    max-width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
