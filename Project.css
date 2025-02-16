@@ -94,9 +94,13 @@
     }
 }
 
-body {
+html, body {
     background-color: #0d1117;
     color: #ffffff;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navbar {
