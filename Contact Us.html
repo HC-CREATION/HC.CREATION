@@ -10,39 +10,37 @@
 </head>
 
 <body>
-    <Header class="navbar">
-        <div class="Logo"><span>HC.CREATION</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="#Login">Login</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </nav>
-    </Header>
-    <div class="menubar">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="Services.html">Services</a>
-            </li>
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="#Contact">Contact Us</a>
-            </li>
+    <nav>
+        <div class="logo">
+            <label class="Logo">HC.CREATION</label>
+        </div>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                        fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
-    </div>
+        <ul>
+            <!-- <li><a href="index.html" class="Logo">HC.CREATION</a></li> -->
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="About.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
     <section id="Contact-us" class="Contact-us">
         <div class="contact-us-heading">
             <h1>Let's Contact</h1>

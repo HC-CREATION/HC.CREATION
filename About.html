@@ -13,39 +13,37 @@
 </head>
 
 <body>
-    <Header class="navbar">
-        <div class="Logo"><span>HC.CREATION</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="#Login">Login</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </nav>
-    </Header>
-    <div class="menubar">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="Services.html">Services</a>
-            </li>
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="Contact Us.html">Contact Us</a>
-            </li>
+    <nav>
+        <div class="logo">
+            <label class="Logo">HC.CREATION</label>
+        </div>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                        fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
-    </div>
+        <ul>
+            <!-- <li><a href="index.html" class="Logo">HC.CREATION</a></li> -->
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="About.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
     <section id="About" class="about-section">
         <!-- <div style="border-bottom: 1px solid #b4aeae69;"></div> -->
         <div class="about-head-section">
@@ -75,334 +73,383 @@
                     future you deserve.</p>
             </div>
             <div class="about-all-content-head" role="navigation" aria-label="About section navigation">
-                <ul>
-                    <li>
-                        <a href="#HC.CREATION" class="touch-target">
-                            <button class="about-btn-1" aria-label="Learn about HC.CREATION">HC.CREATION</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Our-Story" class="touch-target">
-                            <button class="about-btn-2" aria-label="Read our story">Our Story</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Our-Team" class="touch-target">
-                            <button class="about-btn-3" aria-label="Meet our team">Our Team</button>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Grow.With.Us" class="touch-target">
-                            <button class="about-btn-4" aria-label="Grow with us">Grow With Us</button>
-                        </a>
-                    </li>
+                <ul class="about-all-content">
+                    <div class="btn-1">
+                        <li>
+                            <a href="#HC.CREATION" class="touch-target">
+                                <button class="about-btn-1" aria-label="Learn about HC.CREATION">HC.CREATION</button>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="btn-2">
+                        <li>
+                            <a href="#Our-Story" class="touch-target">
+                                <button class="about-btn-2" aria-label="Read our story">Our Story</button>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="btn-3">
+                        <li>
+                            <a href="#Our-Team" class="touch-target">
+                                <button class="about-btn-3" aria-label="Meet our team">Our Team</button>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="btn-4">
+                        <li>
+                            <a href="#Grow.With.Us" class="touch-target">
+                                <button class="about-btn-4" aria-label="Grow with us">Grow With Us</button>
+                            </a>
+                        </li>
+                    </div>
                 </ul>
-            </div>
 
-            <div id="HC.CREATION" class="HC-CREATION">
-                <h1 class="Hc-creation-heading">
-                    ABOUT HC.CREATION
-                </h1>
-                <p class="Hc-creation-content">Welcome to HC.CREATION
+                <div id="HC.CREATION" class="HC-CREATION">
+                    <h1 class="Hc-creation-heading">
+                        ABOUT HC.CREATION
+                    </h1>
+                    <p class="Hc-creation-content">Welcome to HC.CREATION
 
-                    Our journey began in 2019 with a passion for coding and hacking, fueled by curiosity and an
-                    eagerness to learn. Like many, we faced moments of uncertainty about the right career path. But
-                    through dedication, hard work, and smart decisions, we found our purpose: to empower students like
-                    you.
+                        Our journey began in 2019 with a passion for coding and hacking, fueled by curiosity and an
+                        eagerness to learn. Like many, we faced moments of uncertainty about the right career path. But
+                        through dedication, hard work, and smart decisions, we found our purpose: to empower students
+                        like
+                        you.
 
-                    In 2025, HC.CREATION was born as an online learning platform designed to provide career guidance,
-                    practical skills, and inspiration. Our mission is simple—help students shape their futures and
-                    achieve their dreams. Together, lets turn challenges into opportunities and pave the way for
-                    brighter tomorrows.
+                        In 2025, HC.CREATION was born as an online learning platform designed to provide career
+                        guidance,
+                        practical skills, and inspiration. Our mission is simple—help students shape their futures and
+                        achieve their dreams. Together, lets turn challenges into opportunities and pave the way for
+                        brighter tomorrows.
 
-                    Your future starts here. Lets create it together.</p>
-                <div class="about-img">
-                    <img src="https://cdn.pixabay.com/photo/2020/10/22/06/34/student-5675055_1280.png" alt="About-1">
-                    <img src="https://cdn.pixabay.com/photo/2016/04/01/11/10/boy-1300226_1280.png" alt="about-2">
-                </div>
-            </div>
-            <div id="Our-Story" class="Our-story">
-                <h1 class="Our-Story-heading">
-                    OUR STORY
-                </h1>
-                <p class="Our-Story-content">HC.CREATION: Empowering Learners, Transforming Futures.
-
-                    HC.CREATION was founded in 2019 by <strong>HIMESH CHITTE.</strong><br> A visionary with a passion
-                    for ethical hacking and
-                    education. Driven by the mission to make learning accessible and impactful, the platform began as an
-                    initiative to provide free courses to students, breaking barriers and opening doors to knowledge for
-                    individuals from all walks of life.<br><br>
-
-                    <strong>Our Journey</strong><br>
-                    From its humble beginnings in 2019, HC.CREATION evolved into a transformative educational platform.
-                    By 2025, it established itself as a leader in online learning, offering structured classes,
-                    cutting-edge resources, and career development programs. With a focus on fostering skills in ethical
-                    hacking, programming, and other in-demand domains, HC.CREATION empowers learners to stay ahead in a
-                    fast-paced digital world.<br><br>
-
-                    <strong>Our Vision</strong>
-                <ul class="Our-Story-content-list">
-                    HC.CREATION is more than just an educational platform; Its a movement aimed at building a
-                    community
-                    of future-ready individuals. The core vision revolves around:<br><br>
-
-                    <li>Ethical Hacking Education: Cultivating responsible digital citizens who can protect and innovate
-                        in
-                        the technology space.</li><br>
-
-                    <li>Free and Accessible Learning: Ensuring that quality education is within everyones reach,
-                        regardless
-                        of geographical or financial constraints.</li><br>
-
-                    <li>Career Empowerment: Providing tools and guidance for learners to achieve their professional
-                        aspirations.</li>
-                </ul>
-                <span class="what-we-offer"><strong>What We Offer.</strong>
-                    <ul class="what-we-offer-list">
-                        <li>Free Courses: A library of resources covering ethical hacking, programming, and more,
-                            available to
-                            all learners.</li><br>
-
-                        <li>Online Learning Classes: Interactive sessions with experts, offering hands-on experience and
-                            practical knowledge.</li><br>
-
-                        <li>Career Development Programs: Comprehensive training designed to equip learners with the
-                            skills
-                            needed to excel in their careers.</li><br>
-
-                        <li>Community Support: A global network of like-minded individuals and mentors, fostering
-                            collaboration
-                            and growth.</li>
-                    </ul>
-                </span>
-                <span class="why-choose-HC-CREATION"><strong>Why Choose HC.CREATION?</strong>
-                    <ul class="why-choose-HC-CREATION-list">
-                        <li>Expert Guidance: Learn from industry leaders and skilled professionals.</li><br>
-
-                        <li>Innovative Learning Methods: Leverage the latest technologies for an engaging and immersive
-                            experience.</li><br>
-
-                        <li>Global Reach: Join a diverse community of learners from around the world.</li><br>
-
-                        <li>Life-Transforming Opportunities: Unlock potential and pave the way for a brighter future.
-                        </li><br>
-                    </ul>
-                    <strong>HC.CREATION is on a mission to shape the leaders and innovators of tomorrow. With a
-                        steadfast
-                        commitment to excellence and inclusivity, the platform continues to redefine education, making
-                        it a
-                        tool for empowerment and transformation.</strong>
-                </span>
-                </p>
-            </div>
-            <div id="Our-Team" class="Our-team">
-                <h2 class="Our-team-heading">
-                    OUR TEAM
-                </h2>
-                <p class="Our-team-content">
-                <h1>Our Team is The Heart of HC.CREATION.</h1>
-                At HC.CREATION, we believe in the power of collaboration and diversity. What started as a small
-                group of passionate individuals has now grown into a dynamic team of 4 to 5 members spread across
-                the globe. Each member brings unique talents, perspectives, and energy to our mission of empowering
-                learners worldwide.<br><br>
-
-                <h1>Our Philosophy</h1><br>
-                We believe that learning is for everyone. Education transcends boundaries, and at HC.CREATION, we are
-                committed to creating a community where knowledge flows freely, and every individual has the opportunity
-                to grow. Together, we are not just a team; we are a family united by the shared goal of making a
-                difference.<br><br>
-                </p>
-            </div>
-            <div class="meet-our-team">
-                <h2 class="meet-our-team-heading">
-                    Meet Our Team
-                </h2>
-                <div class="team-container">
-                    <div class="team-member">
-                        <!-- <img src="#" alt="Himesh Chitte"> -->
-                        <h3>HIMESH CHITTE</h3>
-                        <strong>- FOUNDER</strong>
-                        <p>A visionary leader with a passion for Ethical-Hacking and Coding education, Himesh lead
-                            the
-                            foundation for HC.CREATION in 2019.</p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/himesh-chitte" target="_blank">
-                                <button class="btn-about-linkedin">LinkedIn</button>
-                            </a>
-                            <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216" target="_blank">
-                                <button class="btn-about-instagram">Instagram</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <!-- <img src="#" alt="Himesh Chitte"> -->
-                        <h3>LUCKY CHAVERIYA</h3>
-                        <strong>- CO-FOUNDER</strong>
-                        <p>A dedicated professional with a background in web development, Lucky is the driving force
-                            behind HC.CREATIONs growth and success.</p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/lucku-chaveriya-130192332/" target="_blank">
-                                <button class="btn-about-linkedin">LinkeIn</button>
-                            </a>
-                            <a href="https://www.instagram.com/mr_luck_09/" target="_blank">
-                                <button class="btn-about-instagram">Instagram</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <!-- <img src="#" alt="Himesh Chitte"> -->
-                        <h3>SUDHANSHU</h3>
-                        <strong>- CO-FOUNDER</strong>
-                        <p>A dedicated professional with a background in web development, Sudhanshu is the driving
-                            force
-                            behind HC.CREATIONs growth and success.</p>
-                        <div class="social-links">
-                            <a href="http://www.linkedin.com/in/sudhanshuch" target="_blank">
-                                <button class="btn-about-linkedin">LinkedIn</button>
-                            </a>
-                            <a href="https://www.instagram.com/n_even134/" target="_blank">
-                                <button class="btn-about-instagram">Instagram</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <!-- <img src="#" alt="Himesh Chitte"> -->
-                        <h3>VIJAY NISHAD</h3>
-                        <strong>- HR</strong>
-                        <p>A dedicated HR towards the growth of our institute, Vijay is the driving force
-                            behind HC.CREATIONs growth and success.</p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/vijay-nishad-337204346/" target="_blank">
-                                <button class="btn-about-linkedin">LinkedIn</button>
-                            </a>
-                            <a href="https://www.instagram.com/nishad.2005/" target="_blank">
-                                <button class="btn-about-instagram">Instagram</button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
-                        <!-- <img src="#" alt="Himesh Chitte"> -->
-                        <h3>HUSSAIN SIDDIQUI</h3>
-                        <strong>- HR ASSISTANT</strong>
-                        <p>A HR assistant towards the growth of our institute, Hussain is the driving force
-                            behind HC.CREATIONs growth and success.</p>
-                        <div class="social-links">
-                            <a href="#" target="_blank">
-                                <button class="btn-about-linkedin">LinkedIn</button>
-                            </a>
-                            <a href="https://www.instagram.com/_hussain__88/?__pwa=1" target="_blank">
-                                <button class="btn-about-instagram">Instagram</button>
-                            </a>
-                        </div>
-
+                        Your future starts here. Lets create it together.</p>
+                    <div class="about-img">
+                        <img src="https://cdn.pixabay.com/photo/2020/10/22/06/34/student-5675055_1280.png"
+                            alt="About-1">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/01/11/10/boy-1300226_1280.png" alt="about-2">
                     </div>
                 </div>
+                <div id="Our-Story" class="Our-story">
+                    <h1 class="Our-Story-heading">
+                        OUR STORY
+                    </h1>
+                    <p class="Our-Story-content">HC.CREATION: Empowering Learners, Transforming Futures.
 
-            </div>
-            <div id="Grow.With.Us" class="grow-with-us-section">
-                <h2 class="grow-with-us-heading">
-                    GROW WITH US
-                </h2>
-                <p class="grow-with-us-content">At HC.CREATION, we are dedicated to helping you build a successful
-                    career in<strong>Coding</strong>
-                    &<strong>Ethical-Hacking</strong>. Whether you're a beginner or an experienced professional, our
-                    platform offers the tools, resources, and guidance you need to become a <strong>Full-Stack
-                        developer</strong>or a <strong>Cybersecurity expert</strong></p>
+                        HC.CREATION was founded in 2019 by <strong>HIMESH CHITTE.</strong><br> A visionary with a
+                        passion
+                        for ethical hacking and
+                        education. Driven by the mission to make learning accessible and impactful, the platform began
+                        as an
+                        initiative to provide free courses to students, breaking barriers and opening doors to knowledge
+                        for
+                        individuals from all walks of life.<br><br>
 
-                <div class="why-grow">
-                    <h3>Why Grow With HC.CREATION?</h3>
-                    <ul class="why-grow-list">
-                        <li><strong>Expert-Led Learning</strong>: Learn from industry leaders and certified
-                            professionals.</li>
-                        <li><strong>Hands-On Experience</strong>: Gain practical skills through real-world projects and
-                            labs.</li>
-                        <li><strong>Career-Focused Programs</strong>: Prepare for high-demand roles in tech and
-                            cybersecurity.</li>
-                        <li><strong>Global Community</strong>: Join a network of learners and professionals worldwide.
-                        </li>
+                        <strong>Our Journey</strong><br>
+                        From its humble beginnings in 2019, HC.CREATION evolved into a transformative educational
+                        platform.
+                        By 2025, it established itself as a leader in online learning, offering structured classes,
+                        cutting-edge resources, and career development programs. With a focus on fostering skills in
+                        ethical
+                        hacking, programming, and other in-demand domains, HC.CREATION empowers learners to stay ahead
+                        in a
+                        fast-paced digital world.<br><br>
+
+                        <strong>Our Vision</strong>
+                    <ul class="Our-Story-content-list">
+                        HC.CREATION is more than just an educational platform; Its a movement aimed at building a
+                        community
+                        of future-ready individuals. The core vision revolves around:<br><br>
+
+                        <li>Ethical Hacking Education: Cultivating responsible digital citizens who can protect and
+                            innovate
+                            in
+                            the technology space.</li><br>
+
+                        <li>Free and Accessible Learning: Ensuring that quality education is within everyones reach,
+                            regardless
+                            of geographical or financial constraints.</li><br>
+
+                        <li>Career Empowerment: Providing tools and guidance for learners to achieve their professional
+                            aspirations.</li>
                     </ul>
-                </div>
+                    <span class="what-we-offer"><strong>What We Offer.</strong>
+                        <ul class="what-we-offer-list">
+                            <li>Free Courses: A library of resources covering ethical hacking, programming, and more,
+                                available to
+                                all learners.</li><br>
 
-                <div class="how-to-grow">
-                    <h3 class="how-to-grow-heading">
-                        How You Can Grow With Us.
-                    </h3>
-                    <h4 class="how-to-grow-heading-1">
-                        1. Start Your Learning Journey.
-                    </h4>
-                    <ul class="how-to-grow-list">
-                        <li><strong>Free Courses</strong>: Access beginner-friendly courses in coding and ethical
-                            hacking.</li>
-                        <li><strong>Certification Programs</strong>: Enroll in advanced programs to earn
-                            industry-recognized certifications.</li>
-                        <li><strong>Live Classes</strong>: Attend interactive sessions with experts to deepen your
-                            knowledge.</li>
-                    </ul>
+                            <li>Online Learning Classes: Interactive sessions with experts, offering hands-on experience
+                                and
+                                practical knowledge.</li><br>
 
-                    <h4 class="how-to-grow-heading-1">2. Build Your Career.</h4>
-                    <ul class="how-to-grow-list">
-                        <li><strong>Career Guidance</strong>: Get personalized advice on career paths in development and
-                            cybersecurity.</li>
-                        <li><strong>Job Placement Support</strong>: Connect with top companies through our placement
-                            assistance program.</li>
-                        <li><strong>Portfolio Building</strong>: Work on real-world projects to showcase your skills to
-                            employers.</li>
-                    </ul>
+                            <li>Career Development Programs: Comprehensive training designed to equip learners with the
+                                skills
+                                needed to excel in their careers.</li><br>
 
-                    <h4 class="how-to-grow-heading-1">3. Join Our Community.</h4>
-                    <ul class="how-to-grow-list">
-                        <li><strong>Collaborate on Projects</strong>: Participate in hackathons and collaborative
-                            projects.</li>
-                        <li><strong>Mentorship Programs</strong>: Learn from experienced mentors who can guide you.</li>
-                        <li><strong>Networking Events</strong>: Attend webinars and meetups to connect with industry
-                            professionals.</li>
-                    </ul>
+                            <li>Community Support: A global network of like-minded individuals and mentors, fostering
+                                collaboration
+                                and growth.</li>
+                        </ul>
+                    </span>
+                    <span class="why-choose-HC-CREATION"><strong>Why Choose HC.CREATION?</strong>
+                        <ul class="why-choose-HC-CREATION-list">
+                            <li>Expert Guidance: Learn from industry leaders and skilled professionals.</li><br>
 
-                    <h4 class="how-to-grow-heading-1">4. Be Part of Our Team.</h4>
-                    <ul class="how-to-grow-list">
-                        <li><strong>Career Opportunities</strong>: Explore job openings and internships at HC.CREATION.
-                        </li>
-                        <li><strong>Contribute to Our Mission</strong>: Help us create innovative learning solutions.
-                        </li>
-                    </ul>
-                </div>
+                            <li>Innovative Learning Methods: Leverage the latest technologies for an engaging and
+                                immersive
+                                experience.</li><br>
 
-                <div class="what-we-offer">
-                    <h3 class="how-to-grow-heading-1">
-                        What We Offer.
-                    </h3>
-                    <ul class="what-we-offer-list">
-                        <li><strong>Coding Mastery</strong>: Learn programming languages like Python, Java, C++, and
-                            more.</li>
-                        <li><strong>Ethical Hacking Expertise</strong>: Master penetration testing and network security.
-                        </li>
-                        <li><strong>Cybersecurity Skills</strong>: Gain knowledge in threat analysis and incident
-                            response.</li>
-                        <li><strong>Developer Tools</strong>: Get hands-on experience with tools like Git and Docker.
-                        </li>
-                    </ul>
-                </div>
+                            <li>Global Reach: Join a diverse community of learners from around the world.</li><br>
 
-                <div class="call-to-action">
-                    <h3 class="call-to-action-heading">Take the First Step</h3>
-                    <p class="call-to-action-content">Your future starts here. Whether you want to become a
-                        <strong>Full-Stack Developer</strong> or a
-                        <strong>Cybersecurity expert</strong>, HC.CREATION is here to guide you every step of the way.
-                        Join us today and start your journey toward a rewarding career in tech.
+                            <li>Life-Transforming Opportunities: Unlock potential and pave the way for a brighter
+                                future.
+                            </li><br>
+                        </ul>
+                        <strong>HC.CREATION is on a mission to shape the leaders and innovators of tomorrow. With a
+                            steadfast
+                            commitment to excellence and inclusivity, the platform continues to redefine education,
+                            making
+                            it a
+                            tool for empowerment and transformation.</strong>
+                    </span>
                     </p>
-                    <ul class="call-to-action-btn">
-                        <li><a href="#Courses"><button class="about-btn-1">Explore Courses</button></a></li>
-                        <li><a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216"
-                                target="_blank"><button class="about-btn-1">Join Our Team</button></a></li>
-                        <li><a href="Contact Us.html"><button class="about-btn-1">Contact Us</button></a></li>
-                    </ul>
+                </div>
+                <div id="Our-Team" class="Our-team">
+                    <h2 class="Our-team-heading">
+                        OUR TEAM
+                    </h2>
+                    <p class="Our-team-content">
+                    <h1>Our Team is The Heart of HC.CREATION.</h1>
+                    At HC.CREATION, we believe in the power of collaboration and diversity. What started as a small
+                    group of passionate individuals has now grown into a dynamic team of 4 to 5 members spread across
+                    the globe. Each member brings unique talents, perspectives, and energy to our mission of empowering
+                    learners worldwide.<br><br>
+
+                    <h1>Our Philosophy</h1><br>
+                    We believe that learning is for everyone. Education transcends boundaries, and at HC.CREATION, we
+                    are
+                    committed to creating a community where knowledge flows freely, and every individual has the
+                    opportunity
+                    to grow. Together, we are not just a team; we are a family united by the shared goal of making a
+                    difference.<br><br>
+                    </p>
+                </div>
+                <div class="meet-our-team">
+                    <h2 class="meet-our-team-heading">
+                        Meet Our Team
+                    </h2>
+                    <div class="team-container">
+                        <div class="team-member">
+                            <!-- <img src="#" alt="Himesh Chitte"> -->
+                            <h3>HIMESH CHITTE</h3>
+                            <strong>- FOUNDER</strong>
+                            <p>A visionary leader with a passion for Ethical-Hacking and Coding education, Himesh lead
+                                the
+                                foundation for HC.CREATION in 2019.</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/himesh-chitte" target="_blank">
+                                    <button class="btn-about-linkedin">LinkedIn</button>
+                                </a>
+                                <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216" target="_blank">
+                                    <button class="btn-about-instagram">Instagram</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <!-- <img src="#" alt="Himesh Chitte"> -->
+                            <h3>LUCKY CHAVERIYA</h3>
+                            <strong>- CO-FOUNDER</strong>
+                            <p>A dedicated professional with a background in web development, Lucky is the driving force
+                                behind HC.CREATIONs growth and success.</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/lucku-chaveriya-130192332/" target="_blank">
+                                    <button class="btn-about-linkedin">LinkeIn</button>
+                                </a>
+                                <a href="https://www.instagram.com/mr_luck_09/" target="_blank">
+                                    <button class="btn-about-instagram">Instagram</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <!-- <img src="#" alt="Himesh Chitte"> -->
+                            <h3>SUDHANSHU</h3>
+                            <strong>- CO-FOUNDER</strong>
+                            <p>A dedicated professional with a background in web development, Sudhanshu is the driving
+                                force
+                                behind HC.CREATIONs growth and success.</p>
+                            <div class="social-links">
+                                <a href="http://www.linkedin.com/in/sudhanshuch" target="_blank">
+                                    <button class="btn-about-linkedin">LinkedIn</button>
+                                </a>
+                                <a href="https://www.instagram.com/n_even134/" target="_blank">
+                                    <button class="btn-about-instagram">Instagram</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <!-- <img src="#" alt="Himesh Chitte"> -->
+                            <h3>VIJAY NISHAD</h3>
+                            <strong>- HR</strong>
+                            <p>A dedicated HR towards the growth of our institute, Vijay is the driving force
+                                behind HC.CREATIONs growth and success.</p>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/vijay-nishad-337204346/" target="_blank">
+                                    <button class="btn-about-linkedin">LinkedIn</button>
+                                </a>
+                                <a href="https://www.instagram.com/nishad.2005/" target="_blank">
+                                    <button class="btn-about-instagram">Instagram</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <!-- <img src="#" alt="Himesh Chitte"> -->
+                            <h3>HUSSAIN SIDDIQUI</h3>
+                            <strong>- HR ASSISTANT</strong>
+                            <p>A HR assistant towards the growth of our institute, Hussain is the driving force
+                                behind HC.CREATIONs growth and success.</p>
+                            <div class="social-links">
+                                <a href="#" target="_blank">
+                                    <button class="btn-about-linkedin">LinkedIn</button>
+                                </a>
+                                <a href="https://www.instagram.com/_hussain__88/?__pwa=1" target="_blank">
+                                    <button class="btn-about-instagram">Instagram</button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Grow.With.Us" class="grow-with-us-section">
+                    <h2 class="grow-with-us-heading">
+                        GROW WITH US
+                    </h2>
+                    <p class="grow-with-us-content">At HC.CREATION, we are dedicated to helping you build a successful
+                        career in<strong>Coding</strong>
+                        &<strong>Ethical-Hacking</strong>. Whether you're a beginner or an experienced professional, our
+                        platform offers the tools, resources, and guidance you need to become a <strong>Full-Stack
+                            developer</strong>or a <strong>Cybersecurity expert</strong></p>
+
+                    <div class="why-grow">
+                        <h3>Why Grow With HC.CREATION?</h3>
+                        <ul class="why-grow-list">
+                            <li><strong>Expert-Led Learning</strong>: Learn from industry leaders and certified
+                                professionals.</li>
+                            <li><strong>Hands-On Experience</strong>: Gain practical skills through real-world projects
+                                and
+                                labs.</li>
+                            <li><strong>Career-Focused Programs</strong>: Prepare for high-demand roles in tech and
+                                cybersecurity.</li>
+                            <li><strong>Global Community</strong>: Join a network of learners and professionals
+                                worldwide.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="how-to-grow">
+                        <h3 class="how-to-grow-heading">
+                            How You Can Grow With Us.
+                        </h3>
+                        <h4 class="how-to-grow-heading-1">
+                            1. Start Your Learning Journey.
+                        </h4>
+                        <ul class="how-to-grow-list">
+                            <li><strong>Free Courses</strong>: Access beginner-friendly courses in coding and ethical
+                                hacking.</li>
+                            <li><strong>Certification Programs</strong>: Enroll in advanced programs to earn
+                                industry-recognized certifications.</li>
+                            <li><strong>Live Classes</strong>: Attend interactive sessions with experts to deepen your
+                                knowledge.</li>
+                        </ul>
+
+                        <h4 class="how-to-grow-heading-1">2. Build Your Career.</h4>
+                        <ul class="how-to-grow-list">
+                            <li><strong>Career Guidance</strong>: Get personalized advice on career paths in development
+                                and
+                                cybersecurity.</li>
+                            <li><strong>Job Placement Support</strong>: Connect with top companies through our placement
+                                assistance program.</li>
+                            <li><strong>Portfolio Building</strong>: Work on real-world projects to showcase your skills
+                                to
+                                employers.</li>
+                        </ul>
+
+                        <h4 class="how-to-grow-heading-1">3. Join Our Community.</h4>
+                        <ul class="how-to-grow-list">
+                            <li><strong>Collaborate on Projects</strong>: Participate in hackathons and collaborative
+                                projects.</li>
+                            <li><strong>Mentorship Programs</strong>: Learn from experienced mentors who can guide you.
+                            </li>
+                            <li><strong>Networking Events</strong>: Attend webinars and meetups to connect with industry
+                                professionals.</li>
+                        </ul>
+
+                        <h4 class="how-to-grow-heading-1">4. Be Part of Our Team.</h4>
+                        <ul class="how-to-grow-list">
+                            <li><strong>Career Opportunities</strong>: Explore job openings and internships at
+                                HC.CREATION.
+                            </li>
+                            <li><strong>Contribute to Our Mission</strong>: Help us create innovative learning
+                                solutions.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="what-we-offer">
+                        <h3 class="how-to-grow-heading-1">
+                            What We Offer.
+                        </h3>
+                        <ul class="what-we-offer-list">
+                            <li><strong>Coding Mastery</strong>: Learn programming languages like Python, Java, C++, and
+                                more.</li>
+                            <li><strong>Ethical Hacking Expertise</strong>: Master penetration testing and network
+                                security.
+                            </li>
+                            <li><strong>Cybersecurity Skills</strong>: Gain knowledge in threat analysis and incident
+                                response.</li>
+                            <li><strong>Developer Tools</strong>: Get hands-on experience with tools like Git and
+                                Docker.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="call-to-action">
+                        <h3 class="call-to-action-heading">Take the First Step</h3>
+                        <p class="call-to-action-content">Your future starts here. Whether you want to become a
+                            <strong>Full-Stack Developer</strong> or a
+                            <strong>Cybersecurity expert</strong>, HC.CREATION is here to guide you every step of the
+                            way.
+                            Join us today and start your journey toward a rewarding career in tech.
+                        </p>
+                        <ul class="call-to-action-btn">
+                            <div class="btn-2">
+                                <li>
+                                    <a href="#Courses"><button class="about-btn-1">Explore Courses</button></a>
+                                </li>
+                            </div>
+                            <div class="btn-4">
+                                <li>
+                                    <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216"
+                                        target="_blank">
+                                        <button class="about-btn-1">Join Our Team</button>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="btn-3">
+                                <li>
+                                    <a href="Contact Us.html">
+                                        <button class="about-btn-1">Contact Us</button>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer class="footer">
         <div class="container">

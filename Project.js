@@ -1,7 +1,12 @@
-// Mobile navigation functionality
-const hamburger = document.querySelector('.ham-burger');
-const navMenu = document.querySelector('nav ul');
-const navLinks = document.querySelectorAll('nav ul li a');
+function showSidebar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = 'flex'
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = 'none'
+}
 
 // Testimonial Carousel Functionality
 const testimonials = document.querySelectorAll('.testimonial');
@@ -60,37 +65,4 @@ dots.forEach((dot, index) => {
         showTestimonial(currentIndex);
         autoRotate = setInterval(nextTestimonial, 5000);
     });
-});
-
-
-// Toggle mobile menu
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Close menu when link is clicked
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-});
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Handle window resize
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    }
 });

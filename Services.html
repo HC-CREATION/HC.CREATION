@@ -13,39 +13,37 @@
 </head>
 
 <body>
-    <Header class="navbar">
-        <div class="Logo"><span>HC.CREATION</span></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="#Login">Login</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </nav>
-    </Header>
-    <div class="menubar">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="Services.html">Services</a>
-            </li>
-            <li>
-                <a href="About.html">About Us</a>
-            </li>
-            <li>
-                <a href="Contact Us.html">Contact Us</a>
-            </li>
+    <nav>
+        <div class="logo">
+            <label class="Logo">HC.CREATION</label>
+        </div>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                        fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
-    </div>
+        <ul>
+            <!-- <li><a href="index.html" class="Logo">HC.CREATION</a></li> -->
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="About.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                        fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
     <!-- Section services headers -->
     <section id="Services" class="Services-section">
         <div class="section-img">
@@ -63,24 +61,28 @@
                 support.
             </p>
             <div class="section-btn" role="group" aria-label="Service actions">
-                <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216" target="_blank"
-                    class="touch-target">
-                    <button class="btn-primary" onclick="getStarted()" aria-label="Get started with our services">Get
-                        Started</button>
-                </a>
-                <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216" target="_blank"
-                    class="touch-target">
-                    <button class="btn-secondary" onclick="getStarted()"
-                        style="background: linear-gradient(90deg, #ffffff 0%, #ffffff 35%, #ffffff 100% ); color: #000000;"
-                        aria-label="Learn more about our services">Learn More</button>
-                </a>
+                <div class="btn-1">
+                    <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216" target="_blank"
+                        class="touch-target">
+                        <button class="btn-primary" onclick="getStarted()"
+                            aria-label="Get started with our services">Get
+                            Started</button>
+                    </a>
+                </div>
+                <div class="btn-3">
+                    <a href="https://www.instagram.com/_himesh.here_?igsh=cXB2bW80dnRmc216" target="_blank"
+                        class="touch-target">
+                        <button class="btn-secondary" onclick="getStarted()"
+                            style="background: linear-gradient(90deg, #ffffff 0%, #ffffff 35%, #ffffff 100% ); color: #000000;"
+                            aria-label="Learn more about our services">Learn More</button>
+                    </a>
+                </div>
             </div>
 
         </div>
     </section>
     <!-- Starting Section services -->
     <section id="Services-start" class="Services-start-section">
-        <div style="border-bottom: 1px solid #8d8d8d69;"></div>
         <div class="Services-start-content">
             <div class="-services-header-section">
                 <h1 class="Services-title">
@@ -132,66 +134,71 @@
         </div>
 
     </section>
-<section class="testimonials" aria-label="Client Testimonials">
-    <h2 class="testimonial-head">What Our Clients Say</h2>
-    <div class="testimonial-nav">
-        <button class="testimonial-prev" aria-label="Previous testimonial">&#10094;</button>
+    <section class="testimonials" aria-label="Client Testimonials">
+        <h2 class="testimonial-head">What Our Clients Say</h2>
+        <div class="testimonial-nav">
+            <button class="testimonial-prev" aria-label="Previous testimonial">&#10094;</button>
 
-        <div class="testimonial-container">
-            <div class="testimonial active">
+            <div class="testimonial-container">
+                <div class="testimonial active">
 
-                <div class="client-info">
-                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" class="client-avatar">
-                    <div class="client-rating">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe" class="client-avatar">
+                        <div class="client-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
                     </div>
+                    <p class="testimonial-text">"HC.CREATION Is the best online learning platform for coding and
+                        hacking."</p>
+                    <h4 class="client-name">- John Doe</h4>
                 </div>
-                <p class="testimonial-text">"HC.CREATION Is the best online learning platform for coding and hacking."</p>
-                <h4 class="client-name">- John Doe</h4>
-            </div>
-            <div class="testimonial">
-                <div class="client-info">
-                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Jane Smith" class="client-avatar">
-                    <div class="client-rating">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
+                <div class="testimonial">
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Jane Smith"
+                            class="client-avatar">
+                        <div class="client-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
                     </div>
+                    <p class="testimonial-text">"Excellent service! They truly understand the requirements of the
+                        students and also give best life-changing education."</p>
+                    <h4 class="client-name">- Jane Smith</h4>
                 </div>
-                <p class="testimonial-text">"Excellent service! They truly understand the requirements of the students and also give best life-changing education."</p>
-                <h4 class="client-name">- Jane Smith</h4>
-            </div>
-            <div class="testimonial">
-                <div class="client-info">
-                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Mark Wilson" class="client-avatar">
-                    <div class="client-rating">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
+                <div class="testimonial">
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Mark Wilson"
+                            class="client-avatar">
+                        <div class="client-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
                     </div>
+                    <p class="testimonial-text">"HC.CREATION, reliable, and efficient. Highly recommend HC.CREATION!"
+                    </p>
+                    <h4 class="client-name">- Mark Wilson</h4>
                 </div>
-                <p class="testimonial-text">"HC.CREATION, reliable, and efficient. Highly recommend HC.CREATION!"</p>
-                <h4 class="client-name">- Mark Wilson</h4>
             </div>
+            <button class="testimonial-next" aria-label="Next testimonial">&#10095;</button>
+
         </div>
-        <button class="testimonial-next" aria-label="Next testimonial">&#10095;</button>
+        <div class="testimonial-dots">
+            <span class="testimonial-dot active" aria-label="Testimonial 1"></span>
+            <span class="testimonial-dot" aria-label="Testimonial 2"></span>
+            <span class="testimonial-dot" aria-label="Testimonial 3"></span>
+        </div>
 
-    </div>
-    <div class="testimonial-dots">
-        <span class="testimonial-dot active" aria-label="Testimonial 1"></span>
-        <span class="testimonial-dot" aria-label="Testimonial 2"></span>
-        <span class="testimonial-dot" aria-label="Testimonial 3"></span>
-    </div>
-
-</section>
+    </section>
 
     <footer class="footer">
         <div class="container">

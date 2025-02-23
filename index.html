@@ -3,51 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
-  <meta name="theme-color" content="#0d1117">
-  <meta name="mobile-web-app-capable" content="yes">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hc.creation.com</title>
   <link rel="stylesheet" href="Project.css">
-  <script src="Project.js" defer></script>
+  <script src="Project.js"></script>
 </head>
 
-
 <body>
-  <Header class="navbar">
-    <div class="Logo"><span>HC.CREATION</span></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="About.html">About Us</a></li>
-        <li><a href="Contact Us.html">Contact Us</a></li>
-        <li><a href="#Login">Login</a></li>
-      </ul>
-      <div class="ham-burger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-
-    </nav>
-  </Header>
-  <div class="menubar">
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="Services.html">Services</a>
-      </li>
-      <li>
-        <a href="About.html">About Us</a>
-      </li>
-      <li>
-        <a href="Contact Us.html">Contact Us</a>
-      </li>
+  <nav>
+    <div class="logo">
+      <label class="Logo">HC.CREATION</label>
+    </div>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+      <li><a href="#">Login</a></li>
     </ul>
-  </div>
+    <ul>
+      <!-- <li><a href="index.html" class="Logo">HC.CREATION</a></li> -->
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="Services.html">Services</a></li>
+      <li class="hideOnMobile"><a href="About.html">About Us</a></li>
+      <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+      <li class="hideOnMobile"><a href="#">Login</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
   <section class="head-content">
     <div class="head-content-1">
       <div class="head-content-badge">HC.CREATION</div>
@@ -61,15 +52,19 @@
       <p>In a world full of technology, be a problem solver.</p>
     </div>
     <section class="section-btn-content">
-      <div class="section-btn" role="group" aria-label="Main actions">
+      <div class="btn-1">
         <a href="#" class="touch-target">
           <button class="btn-primary" aria-label="View all projects">All Projects</button>
         </a>
+      </div>
+      <div class="btn-2">
         <a href="#" class="touch-target">
           <button class="btn-secondary" aria-label="Join live class">Live Class</button>
         </a>
+      </div>
+      <div class="btn-3">
         <a href="#" class="touch-target">
-          <button class="btn-tertiary" aria-label="Get doubt solving">Doubt Solving</button>
+          <button class="btn-tertiary" aria-label="Get doubt solving">Any Doubt</button>
         </a>
       </div>
 
@@ -97,9 +92,11 @@
 
         <div class="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: <a href="mailto:himeshchitte8@gmail.com" class="touch-target">himeshchitte8@gmail.com</a></p>
+          <p>Email: <a href="mailto:himeshchitte8@gmail.com" class="touch-target">himeshchitte8@gmail.com</a>
+          </p>
           <p>Phone: <a href="tel:+919372904307" class="touch-target">+91-9372904307</a></p>
-          <p>Address: <a href="https://maps.app.goo.gl/KZtb7geVfrtwzb47A" target="_blank" rel="noopener" class="touch-target">
+          <p>Address: <a href="https://maps.app.goo.gl/KZtb7geVfrtwzb47A" target="_blank" rel="noopener"
+              class="touch-target">
               Tank road, kashi nagar, Bhandup West, Mumbai - 400078
             </a></p>
 
@@ -114,4 +111,3 @@
 </body>
 
 </html>
-<!-- Your next big idea starts here -->
